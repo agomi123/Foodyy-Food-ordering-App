@@ -5,7 +5,7 @@ import morgan from 'morgan';
 import path from 'path';
 // extension of file required
 import connectDB from './config/db.js';
-
+import {fileURLToPath} from 'url';
 import authRoute from './routes/authRoute.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import productRoutes from './routes/productRoute.js';
@@ -13,7 +13,8 @@ import productRoutes from './routes/productRoute.js';
 import cors from 'cors';
 dotenv.config();
 connectDB();
-
+const __filename= fileURLToPath(import.meta.url);
+const __dirname= path.dirname(__filname);
 const app = express();
 app.use(cors()); 
 app.use(express.json());
