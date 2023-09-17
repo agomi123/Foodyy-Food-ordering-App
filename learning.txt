@@ -1,0 +1,9 @@
+1. npm init -y
+2. npm i express colors
+3. add dotenv
+4. npm i mongoose morgan
+5. morgan is used for getting details of the current api used or fetching
+
+6. to achieve seo we use react helmet using dynamic meta tags
+7. axios for communicating frontend with backend
+8. toastify 
